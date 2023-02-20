@@ -1,0 +1,11 @@
+<div class='container m-5'>
+  <div class='d-flex flex-row mb-3'>
+    <h3 class='me-4'>Grid Letters</h3>
+    <% @grid_letters.each do |letter| %>
+        <div class='px-2 py-1 fs-5 border border-danger'><%= letter %></div>
+    <% end %>
+  </div>
+  <p>Your answer: <%=params[:word]%></p>
+  <p>Result: <%=@result%></p>
+  <div><%= link_to 'New game', new_path %></div>
+</div>
